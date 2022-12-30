@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AB87225B295F09E3007656F4 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB87225A295F09E3007656F4 /* DummyViewController.swift */; };
 		AB87225E295F0EA2007656F4 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB87225D295F0EA2007656F4 /* LocalState.swift */; };
+		AB872260295F1850007656F4 /* UiViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB87225F295F1850007656F4 /* UiViewController+Utils.swift */; };
+		AB872262295F19B3007656F4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB872261295F19B3007656F4 /* MainViewController.swift */; };
 		AB9E9F47295DA3C300100EA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9E9F46295DA3C300100EA3 /* AppDelegate.swift */; };
 		AB9E9F4B295DA3C300100EA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9E9F4A295DA3C300100EA3 /* LoginViewController.swift */; };
 		AB9E9F50295DA3C400100EA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9E9F4F295DA3C400100EA3 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		AB87225A295F09E3007656F4 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		AB87225D295F0EA2007656F4 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
+		AB87225F295F1850007656F4 /* UiViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewController+Utils.swift"; sourceTree = "<group>"; };
+		AB872261295F19B3007656F4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AB9E9F43295DA3C300100EA3 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9E9F46295DA3C300100EA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB9E9F4A295DA3C300100EA3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				AB87225D295F0EA2007656F4 /* LocalState.swift */,
+				AB87225F295F1850007656F4 /* UiViewController+Utils.swift */,
 			);
 			path = Utilis;
 			sourceTree = "<group>";
@@ -70,11 +75,12 @@
 		AB9E9F45295DA3C300100EA3 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
-				AB87225C295F0E94007656F4 /* Utilis */,
-				ABA3F5EB295E3FCE007111AC /* Onboarding */,
-				AB9E9F5A295DA5C500100EA3 /* Files */,
-				AB9E9F5B295DA61800100EA3 /* Login */,
 				AB9E9F46295DA3C300100EA3 /* AppDelegate.swift */,
+				AB9E9F5B295DA61800100EA3 /* Login */,
+				ABA3F5EB295E3FCE007111AC /* Onboarding */,
+				AB87225C295F0E94007656F4 /* Utilis */,
+				AB9E9F5A295DA5C500100EA3 /* Files */,
+				AB872261295F19B3007656F4 /* MainViewController.swift */,
 			);
 			path = Bankey;
 			sourceTree = "<group>";
@@ -178,11 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB872260295F1850007656F4 /* UiViewController+Utils.swift in Sources */,
 				AB9E9F5D295DA63A00100EA3 /* LoginView.swift in Sources */,
 				AB87225E295F0EA2007656F4 /* LocalState.swift in Sources */,
 				AB87225B295F09E3007656F4 /* DummyViewController.swift in Sources */,
 				AB9E9F4B295DA3C300100EA3 /* LoginViewController.swift in Sources */,
 				ABA3F5EF295E43FA007111AC /* OnboardingViewController.swift in Sources */,
+				AB872262295F19B3007656F4 /* MainViewController.swift in Sources */,
 				AB9E9F47295DA3C300100EA3 /* AppDelegate.swift in Sources */,
 				ABA3F5ED295E4005007111AC /* OnboardingContainerViewControllerDelegate.swift in Sources */,
 			);
