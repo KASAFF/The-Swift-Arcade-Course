@@ -47,6 +47,8 @@ extension LoginView {
         dividerView.translatesAutoresizingMaskIntoConstraints = false
         dividerView.backgroundColor = .secondarySystemFill
 
+        passwordTextField.enablePasswordToggle()
+
         layer.cornerRadius = 5
         clipsToBounds = true
 
