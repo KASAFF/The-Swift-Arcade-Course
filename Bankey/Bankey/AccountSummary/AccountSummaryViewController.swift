@@ -116,7 +116,12 @@ extension AccountSummaryViewController: UITableViewDelegate {
 
 // MARK: - Networking
 extension AccountSummaryViewController {
+
+
+
     private func fetchData() {
+
+
         let group = DispatchGroup()
 
         let userId = String(Int.random(in: 1..<4))
@@ -126,13 +131,22 @@ extension AccountSummaryViewController {
             switch result {
             case .success(let profile):
                 self.profile = profile
-
             case .failure(let error):
-                print(error.localizedDescription)
+                var alertTitle: String
+                var alertMessage: String
+                // 🕹 Game on switch here...
+                switch error {
+                case .serverError:
+                    alertTitle = "Server Error"
+                    alertMessage = "Ensure you are connected to the internet. Please try again."
+                case .decodingError:
+                    alertTitle = "Server Error"
+                    alertMessage = "Ensure you are connected to the internet. Please try again."
+                }
+                self.showErrorAlert(title: alertTitle, message: alertMessage)
             }
             group.leave()
         }
-
         group.enter()
         fetchAccounts(forUserId: userId) { result in
             switch result {
@@ -171,6 +185,16 @@ extension AccountSummaryViewController {
                                          accountName: $0.name,
                                          balance: $0.amount)
         })
+    }
+
+    private func showErrorAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
+        present(alert, animated: true, completion: nil)
     }
 }
 //MARK: - Actions
