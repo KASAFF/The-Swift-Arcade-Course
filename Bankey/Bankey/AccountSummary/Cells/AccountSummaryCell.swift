@@ -7,13 +7,13 @@
 
 import UIKit
 
-class AccountSummaryCell: UITableViewCell {
+enum AccountType: String, Codable {
+    case Banking
+    case CreditCard
+    case Investment
+}
 
-    enum AccountType: String {
-        case Banking
-        case CreditCard
-        case Investment
-    }
+class AccountSummaryCell: UITableViewCell {
 
     struct ViewModel {
         let accountType: AccountType
