@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AB02A048295F62D800EDE88D /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB02A047295F62D800EDE88D /* AccountSummaryCell.swift */; };
+		AB2EA7762964311D00C6BC40 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2EA7752964311D00C6BC40 /* ProfileManager.swift */; };
+		AB2EA7782964340400C6BC40 /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2EA7772964340400C6BC40 /* AccountSummaryViewControllerTests.swift */; };
 		AB87225B295F09E3007656F4 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB87225A295F09E3007656F4 /* DummyViewController.swift */; };
 		AB87225E295F0EA2007656F4 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB87225D295F0EA2007656F4 /* LocalState.swift */; };
 		AB872260295F1850007656F4 /* UiViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB87225F295F1850007656F4 /* UiViewController+Utils.swift */; };
@@ -48,6 +50,8 @@
 
 /* Begin PBXFileReference section */
 		AB02A047295F62D800EDE88D /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
+		AB2EA7752964311D00C6BC40 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		AB2EA7772964340400C6BC40 /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
 		AB87225A295F09E3007656F4 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		AB87225D295F0EA2007656F4 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		AB87225F295F1850007656F4 /* UiViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewController+Utils.swift"; sourceTree = "<group>"; };
@@ -116,6 +120,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		AB2EA774296430F400C6BC40 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AB2EA7752964311D00C6BC40 /* ProfileManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		AB87225C295F0E94007656F4 /* Utilis */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +148,7 @@
 				AB872264295F3B37007656F4 /* AccountSummaryViewController.swift */,
 				ABA2CC29296350B700852AFA /* AccountSummaryViewController+Networking.swift */,
 				AB02A045295F629400EDE88D /* Header */,
+				AB2EA774296430F400C6BC40 /* Networking */,
 				AB02A046295F62AC00EDE88D /* Cells */,
 			);
 			path = AccountSummary;
@@ -215,6 +228,7 @@
 			children = (
 				ABA2CC2D29635CC700852AFA /* ProfileTests.swift */,
 				ABA2CC2F29635D8A00852AFA /* AccountTests.swift */,
+				AB2EA7772964340400C6BC40 /* AccountSummaryViewControllerTests.swift */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -342,6 +356,7 @@
 				AB872260295F1850007656F4 /* UiViewController+Utils.swift in Sources */,
 				ABA2CC3429636E0300852AFA /* SkeletonCell.swift in Sources */,
 				ABA2CC2829634EC000852AFA /* Date+Utils.swift in Sources */,
+				AB2EA7762964311D00C6BC40 /* ProfileManager.swift in Sources */,
 				AB9E9F5D295DA63A00100EA3 /* LoginView.swift in Sources */,
 				AB87225E295F0EA2007656F4 /* LocalState.swift in Sources */,
 				AB872267295F405A007656F4 /* AccountSummaryHeaderView.swift in Sources */,
@@ -370,6 +385,7 @@
 				ABEC83CC2961CBD2003EF77E /* CurrencyFormatterTests.swift in Sources */,
 				ABA2CC3029635D8A00852AFA /* AccountTests.swift in Sources */,
 				ABA2CC2E29635CC700852AFA /* ProfileTests.swift in Sources */,
+				AB2EA7782964340400C6BC40 /* AccountSummaryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
