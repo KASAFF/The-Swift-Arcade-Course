@@ -1,3 +1,3 @@
 # The-Swift-Arcade-Course
 
-Hello
+Hello! You type whatever
