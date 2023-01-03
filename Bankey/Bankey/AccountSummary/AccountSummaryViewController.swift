@@ -132,18 +132,7 @@ extension AccountSummaryViewController {
             case .success(let profile):
                 self.profile = profile
             case .failure(let error):
-                var alertTitle: String
-                var alertMessage: String
-                // 🕹 Game on switch here...
-                switch error {
-                case .serverError:
-                    alertTitle = "Server Error"
-                    alertMessage = "Ensure you are connected to the internet. Please try again."
-                case .decodingError:
-                    alertTitle = "Server Error"
-                    alertMessage = "Ensure you are connected to the internet. Please try again."
-                }
-                self.showErrorAlert(title: alertTitle, message: alertMessage)
+                self.displayError(error)
             }
             group.leave()
         }
@@ -153,7 +142,7 @@ extension AccountSummaryViewController {
             case .success(let accounts):
                 self.accounts = accounts
             case .failure(let error):
-                print(error.localizedDescription)
+                self.displayError(error)
             }
             group.leave()
         }
@@ -185,6 +174,19 @@ extension AccountSummaryViewController {
                                          accountName: $0.name,
                                          balance: $0.amount)
         })
+    }
+    private func displayError(_ error: NetworkError) {
+        var alertTitle: String
+        var alertMessage: String
+        switch error {
+        case .serverError:
+            alertTitle = "Server Error"
+            alertMessage = "Ensure you are connected to the internet. Please try again."
+        case .decodingError:
+            alertTitle = "Server Error"
+            alertMessage = "Ensure you are connected to the internet. Please try again."
+        }
+        showErrorAlert(title: alertTitle, message: alertMessage)
     }
 
     private func showErrorAlert(title: String, message: String) {
