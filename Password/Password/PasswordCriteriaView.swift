@@ -48,7 +48,7 @@ class PasswordCriteriaView: UIView {
     }
 
     override var intrinsicContentSize: CGSize {
-        return CGSize(width: 200, height: 40)
+        return CGSize(width: 200, height: 170)
     }
 }
 
