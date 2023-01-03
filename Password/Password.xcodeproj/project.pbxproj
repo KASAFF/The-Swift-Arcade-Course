@@ -3,27 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB2EA7882964630800C6BC40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2EA7872964630800C6BC40 /* AppDelegate.swift */; };
-		AB2EA78C2964630800C6BC40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2EA78B2964630800C6BC40 /* ViewController.swift */; };
-		AB2EA7912964630900C6BC40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2EA7902964630900C6BC40 /* Assets.xcassets */; };
-		AB2EA7942964630900C6BC40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2EA7922964630900C6BC40 /* LaunchScreen.storyboard */; };
+		71A08D87279D9D7500CBDCED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A08D86279D9D7500CBDCED /* AppDelegate.swift */; };
+		71A08D8B279D9D7500CBDCED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A08D8A279D9D7500CBDCED /* ViewController.swift */; };
+		71A08D90279D9D7600CBDCED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A08D8F279D9D7600CBDCED /* Assets.xcassets */; };
+		71A08D93279D9D7600CBDCED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A08D91279D9D7600CBDCED /* LaunchScreen.storyboard */; };
+		71A08D9C279DA85C00CBDCED /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A08D9B279DA85C00CBDCED /* PasswordTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB2EA7842964630800C6BC40 /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB2EA7872964630800C6BC40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB2EA78B2964630800C6BC40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AB2EA7902964630900C6BC40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AB2EA7932964630900C6BC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AB2EA7952964630900C6BC40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71A08D83279D9D7500CBDCED /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71A08D86279D9D7500CBDCED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71A08D8A279D9D7500CBDCED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71A08D8F279D9D7600CBDCED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71A08D92279D9D7600CBDCED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71A08D94279D9D7600CBDCED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71A08D9B279DA85C00CBDCED /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AB2EA7812964630800C6BC40 /* Frameworks */ = {
+		71A08D80279D9D7500CBDCED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,38 +35,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AB2EA77B2964630800C6BC40 = {
+		71A08D7A279D9D7500CBDCED = {
 			isa = PBXGroup;
 			children = (
-				AB2EA7862964630800C6BC40 /* Password */,
-				AB2EA7852964630800C6BC40 /* Products */,
+				71A08D85279D9D7500CBDCED /* Password */,
+				71A08D84279D9D7500CBDCED /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AB2EA7852964630800C6BC40 /* Products */ = {
+		71A08D84279D9D7500CBDCED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB2EA7842964630800C6BC40 /* Password.app */,
+				71A08D83279D9D7500CBDCED /* Password.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB2EA7862964630800C6BC40 /* Password */ = {
+		71A08D85279D9D7500CBDCED /* Password */ = {
 			isa = PBXGroup;
 			children = (
-				AB2EA79B2964635F00C6BC40 /* Files */,
-				AB2EA7872964630800C6BC40 /* AppDelegate.swift */,
-				AB2EA78B2964630800C6BC40 /* ViewController.swift */,
+				71A08D9A279D9E1500CBDCED /* Files */,
+				71A08D86279D9D7500CBDCED /* AppDelegate.swift */,
+				71A08D8A279D9D7500CBDCED /* ViewController.swift */,
+				71A08D9B279DA85C00CBDCED /* PasswordTextField.swift */,
 			);
 			path = Password;
 			sourceTree = "<group>";
 		};
-		AB2EA79B2964635F00C6BC40 /* Files */ = {
+		71A08D9A279D9E1500CBDCED /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				AB2EA7902964630900C6BC40 /* Assets.xcassets */,
-				AB2EA7922964630900C6BC40 /* LaunchScreen.storyboard */,
-				AB2EA7952964630900C6BC40 /* Info.plist */,
+				71A08D8F279D9D7600CBDCED /* Assets.xcassets */,
+				71A08D91279D9D7600CBDCED /* LaunchScreen.storyboard */,
+				71A08D94279D9D7600CBDCED /* Info.plist */,
 			);
 			name = Files;
 			sourceTree = "<group>";
@@ -72,13 +75,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB2EA7832964630800C6BC40 /* Password */ = {
+		71A08D82279D9D7500CBDCED /* Password */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB2EA7982964630900C6BC40 /* Build configuration list for PBXNativeTarget "Password" */;
+			buildConfigurationList = 71A08D97279D9D7600CBDCED /* Build configuration list for PBXNativeTarget "Password" */;
 			buildPhases = (
-				AB2EA7802964630800C6BC40 /* Sources */,
-				AB2EA7812964630800C6BC40 /* Frameworks */,
-				AB2EA7822964630800C6BC40 /* Resources */,
+				71A08D7F279D9D7500CBDCED /* Sources */,
+				71A08D80279D9D7500CBDCED /* Frameworks */,
+				71A08D81279D9D7500CBDCED /* Resources */,
 			);
 			buildRules = (
 			);
@@ -86,71 +89,72 @@
 			);
 			name = Password;
 			productName = Password;
-			productReference = AB2EA7842964630800C6BC40 /* Password.app */;
+			productReference = 71A08D83279D9D7500CBDCED /* Password.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AB2EA77C2964630800C6BC40 /* Project object */ = {
+		71A08D7B279D9D7500CBDCED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					AB2EA7832964630800C6BC40 = {
-						CreatedOnToolsVersion = 14.2;
+					71A08D82279D9D7500CBDCED = {
+						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = AB2EA77F2964630800C6BC40 /* Build configuration list for PBXProject "Password" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = 71A08D7E279D9D7500CBDCED /* Build configuration list for PBXProject "Password" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = AB2EA77B2964630800C6BC40;
-			productRefGroup = AB2EA7852964630800C6BC40 /* Products */;
+			mainGroup = 71A08D7A279D9D7500CBDCED;
+			productRefGroup = 71A08D84279D9D7500CBDCED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB2EA7832964630800C6BC40 /* Password */,
+				71A08D82279D9D7500CBDCED /* Password */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AB2EA7822964630800C6BC40 /* Resources */ = {
+		71A08D81279D9D7500CBDCED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB2EA7942964630900C6BC40 /* LaunchScreen.storyboard in Resources */,
-				AB2EA7912964630900C6BC40 /* Assets.xcassets in Resources */,
+				71A08D93279D9D7600CBDCED /* LaunchScreen.storyboard in Resources */,
+				71A08D90279D9D7600CBDCED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AB2EA7802964630800C6BC40 /* Sources */ = {
+		71A08D7F279D9D7500CBDCED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB2EA78C2964630800C6BC40 /* ViewController.swift in Sources */,
-				AB2EA7882964630800C6BC40 /* AppDelegate.swift in Sources */,
+				71A08D8B279D9D7500CBDCED /* ViewController.swift in Sources */,
+				71A08D87279D9D7500CBDCED /* AppDelegate.swift in Sources */,
+				71A08D9C279DA85C00CBDCED /* PasswordTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AB2EA7922964630900C6BC40 /* LaunchScreen.storyboard */ = {
+		71A08D91279D9D7600CBDCED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AB2EA7932964630900C6BC40 /* Base */,
+				71A08D92279D9D7600CBDCED /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -158,13 +162,14 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AB2EA7962964630900C6BC40 /* Debug */ = {
+		71A08D95279D9D7600CBDCED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -208,7 +213,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -218,13 +223,14 @@
 			};
 			name = Debug;
 		};
-		AB2EA7972964630900C6BC40 /* Release */ = {
+		71A08D96279D9D7600CBDCED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -262,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -272,14 +278,13 @@
 			};
 			name = Release;
 		};
-		AB2EA7992964630900C6BC40 /* Debug */ = {
+		71A08D98279D9D7600CBDCED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V544T4J767;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Password/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -291,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = AK.Password;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsc.Password;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -299,14 +304,13 @@
 			};
 			name = Debug;
 		};
-		AB2EA79A2964630900C6BC40 /* Release */ = {
+		71A08D99279D9D7600CBDCED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V544T4J767;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Password/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -318,7 +322,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = AK.Password;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rsc.Password;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -329,25 +333,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB2EA77F2964630800C6BC40 /* Build configuration list for PBXProject "Password" */ = {
+		71A08D7E279D9D7500CBDCED /* Build configuration list for PBXProject "Password" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB2EA7962964630900C6BC40 /* Debug */,
-				AB2EA7972964630900C6BC40 /* Release */,
+				71A08D95279D9D7600CBDCED /* Debug */,
+				71A08D96279D9D7600CBDCED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB2EA7982964630900C6BC40 /* Build configuration list for PBXNativeTarget "Password" */ = {
+		71A08D97279D9D7600CBDCED /* Build configuration list for PBXNativeTarget "Password" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB2EA7992964630900C6BC40 /* Debug */,
-				AB2EA79A2964630900C6BC40 /* Release */,
+				71A08D98279D9D7600CBDCED /* Debug */,
+				71A08D99279D9D7600CBDCED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AB2EA77C2964630800C6BC40 /* Project object */;
+	rootObject = 71A08D7B279D9D7500CBDCED /* Project object */;
 }
