@@ -12,9 +12,11 @@ class ViewController: UIViewController {
 
     let stackView = UIStackView()
     let newPasswordTextField = PasswordTextField(placeHolderText: "New password")
-    let statusView = PasswordStatusview()
+    let statusView = PasswordStatusView()
     let confirmPasswordTextField = PasswordTextField(placeHolderText: "Re-enter new password")
     let resetButton = UIButton(type: .system)
+
+    var alert: UIAlertController?
 
 
 
@@ -188,10 +190,24 @@ extension ViewController {
     }
     
     private func showAlert(title: String, message: String) {
-        let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
+        alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
+        guard let alert = alert else { return }
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         alert.title = title
         alert.message = message
         present(alert, animated: true)
+    }
+}
+
+// MARK: Tests
+extension ViewController {
+    var newPasswordText: String? {
+        get { return newPasswordTextField.text }
+        set { newPasswordTextField.text = newValue}
+    }
+
+    var confirmPasswordText: String? {
+        get { return confirmPasswordTextField.text }
+        set { confirmPasswordTextField.text = newValue}
     }
 }

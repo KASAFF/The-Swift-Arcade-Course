@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PasswordStatusview: UIView {
+class PasswordStatusView: UIView {
 
     let stackView = UIStackView()
 
@@ -38,7 +38,7 @@ class PasswordStatusview: UIView {
     }
 }
 
-extension PasswordStatusview {
+extension PasswordStatusView {
     func style() {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = .tertiarySystemFill
@@ -98,7 +98,7 @@ extension PasswordStatusview {
 }
 
 //MARK: - Actions
-extension PasswordStatusview {
+extension PasswordStatusView {
     func updateDisplay(_ text: String) {
         let lengthAndNoSpaceMet = PasswordCriteria.lengthCriteriaMet(text)
         let uppercaseMet = PasswordCriteria.uppercaseMet(text)
@@ -158,5 +158,19 @@ extension PasswordStatusview {
         lowerCaseCriteriaView.reset()
         digitCriteriaView.reset()
         specialCharacterCriteriaView.reset()
+    }
+}
+
+extension PasswordCriteriaView {
+    var isCheckMarkImage: Bool {
+        return imageView.image == checkmarkImage
+    }
+
+    var isXmarkImage: Bool {
+        return imageView.image == xmarkImage
+    }
+
+    var isResetImage: Bool {
+        return imageView.image == circleImage
     }
 }
